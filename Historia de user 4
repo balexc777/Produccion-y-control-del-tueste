@@ -1,0 +1,3 @@
+Historia 4: Registro de Perfil de Tueste.
+Como maestro tostador, quiero guardar el perfil de tueste (tiempos, temperaturas, curva de temperatura) para cada lote, para asegurar la consistencia del sabor en futuras producciones.
+Criterios de Aceptación: Gráfica de curva de tueste, temperatura final, tiempo de desarrollo.

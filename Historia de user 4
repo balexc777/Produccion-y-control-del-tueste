@@ -1,7 +1,7 @@
 Historia 4: Registro de Perfil de Tueste.
-Como maestro tostador, quiero guardar el perfil de tueste (tiempos, temperaturas, curva de temperatura) para cada lote, para asegurar la consistencia del sabor en futuras producciones.
+Como encargado del tostado, quiero guardar el perfil de tueste (tiempos, temperaturas, curva de temperatura) para cada lote, para asegurar la consistencia del sabor en futuras producciones.
 Criterios de Aceptación: Gráfica de curva de tueste, temperatura final, tiempo de desarrollo.
-El sistema deberá permitir registrar de forma detallada cada proceso de tueste, almacenando datos clave como:
+El sistema me deberá permitir registrar de forma detallada cada proceso de tueste, almacenando datos clave como:
 Tiempo total del tueste
 Temperatura inicial, intermedia y final
 Eventos importantes (primer crack, segundo crack, etc.)

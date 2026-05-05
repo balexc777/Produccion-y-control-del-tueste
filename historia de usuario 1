@@ -1,0 +1,20 @@
+La solucion a la problematica de la produccion del mani sobre la que estuvimos debatiendo es 
+sobre hacer un software automatizado que ayude con la produccion del tueste del mani.
+
+Temperatura
+  Como soy uno de los encargados de solucionar esta problematica
+quiero que el sistema ajuste automáticamente la intensidad del calor según la curva de tueste 
+definida,para evitar que el maní se queme por variaciones bruscas de temperatura y asegurar un sabor uniforme en cada lote.
+
+Tiempo
+  Tambien necesito que regule y automatize el tiempo de tueste para que podamos tener una produccion en serie.
+
+Seguridad
+  Quiero programar un corte de seguridad que apague los quemadores si el sensor detecta que la temperatura excedio el limite,
+para prevenir incendios o daños estructurales en la maquinaria por acumulación de calor.
+
+
+
+
+
+

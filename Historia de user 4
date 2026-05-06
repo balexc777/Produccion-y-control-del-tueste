@@ -4,3 +4,6 @@ Criterios de Aceptación:
 El sistema debe permitir la carga de perfiles de tueste predefinidos que la IA pueda ajustar automáticamente según las condiciones ambientales.
 La máquina debe contar con un sistema de recuperación de calor que reduzca las emisiones lanzadas a la atmósfera.
 Se debe poder visualizar en tiempo real los cambios químicos y físicos detectados por el software durante el proceso.
+la IA podra analizar datos sobre las características químicas y físicas del café que se está tostando.
+Los tostadores pueden usar estos datos como puntos de referencia para refinar perfiles de tueste en tiempo real.
+Esto facilita un aprendizaje automático más confiable y consistente basado en estándares de calidad predefinidos.

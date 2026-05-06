@@ -1,10 +1,6 @@
-Historia 4: Registro de Perfil de Tueste.
-Como encargado del tostado, quiero guardar el perfil de tueste (tiempos, temperaturas, curva de temperatura) para cada lote, para asegurar la consistencia del sabor en futuras producciones.
-Criterios de Aceptación: Gráfica de curva de tueste, temperatura final, tiempo de desarrollo.
-El sistema me deberá permitir registrar de forma detallada cada proceso de tueste, almacenando datos clave como:
-Tiempo total del tueste
-Temperatura inicial, intermedia y final
-Eventos importantes (primer crack, segundo crack, etc.)
-Curva de temperatura en el tiempo (gráfica)
-Esto permitirá visualizar, analizar y reutilizar perfiles en futuros lotes.
-Solucion: Desarrollar un módulo dentro del sistema que permita almacenar y visualizar de manera completa los datos generados durante el proceso de tueste de café.
+Historia de Usuario 4: Tostado de Precisión con IA
+Como tostador de café de especialidad, quiero integrar sistemas de inteligencia artificial y automatización avanzada en mi equipo de tueste, para garantizar la consistencia absoluta en mis perfiles de sabor y reducir el impacto ambiental de mi producción.
+Criterios de Aceptación:
+El sistema debe permitir la carga de perfiles de tueste predefinidos que la IA pueda ajustar automáticamente según las condiciones ambientales.
+La máquina debe contar con un sistema de recuperación de calor que reduzca las emisiones lanzadas a la atmósfera.
+Se debe poder visualizar en tiempo real los cambios químicos y físicos detectados por el software durante el proceso.

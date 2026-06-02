@@ -1,4 +1,24 @@
-minutos = int(input("ingrese cuantos minutos va a durar el lote: "))
+
+while True:
+    try:
+        minutos = int(input("Ingrese cuántos minutos va a durar el lote: "))
+
+        if minutos <= 0:
+            print("Error: El número de minutos debe ser positivo.")
+        else:
+            break
+
+    except ValueError:
+        print("Error: Debe ingresar un número entero.")
+
 for i in range(minutos):
-    temperaturas = float(input(f"Ingrese la temperatura del minuto {i+1}: "))
-    
+
+    while True:
+        try:
+            temperatura = float(input(f"Ingrese la temperatura del minuto {i+1}: "))
+            break
+
+        except ValueError:
+            print("Error: Debe ingresar un número.")
+
+print("Las temperaturas se registraron con éxito.")

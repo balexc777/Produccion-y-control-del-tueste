@@ -1,6 +1,6 @@
 # Produccion-y-control-del-tueste
 
-Martinnba = Martrin Baigorria  
+Martinnba = Martin Baigorria  
 balexc777 = Bruno Cameille
 ennzo76 = Enzo Guerreiro  
 ivoferrermaster = Ivo Ferrer

@@ -1,7 +1,14 @@
-
 while True:
     try:
-        intensidad = int(input("Seleccione la intensidad de la curva del tueste:\n 1-suave\n 2-medio\n 3-intensa\n opcion:"))
+        Numero_lote = int(input("Ingrese el numero de lote a realizar:"))
+        if Numero_lote <= 0:
+            print("Debe ingresar un numero mayor a 0")
+        break
+    except ValueError:
+        print("Error: Debe ingresar un número.")
+while True:
+    try:
+        intensidad = int(input("Seleccione la intensidad de la curva del tueste:\n 1-suave\n 2-medio\n 3-intensa\n opcion: "))
         if intensidad in [1, 2, 3]:
             if intensidad == 1:
                 temp_min = 180
@@ -46,4 +53,19 @@ print("Las temperaturas registradas son:")
 for item in temperaturas:
             print(f"{item}°C")
 print("Las temperaturas se registraron con éxito.")            
+print("---------------------")
+print("- Resumen del lote  -")
+print("---------------------")
+print(f"Numero del lote: {Numero_lote}")
+print(f"Duracion del lote: {minutos} minutos")
+if intensidad == 1:
+    print("Intensidad del lote: Suave")
+elif intensidad == 2:
+    print("Intensidad del lote: Media")
+else:
+    print("Intensidad del lote: Intensa")        
+print("Temperatura maxima: ")
+print("Temperatura minima: ")
+print("Temperatura media: ")
+
 

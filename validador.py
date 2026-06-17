@@ -3,7 +3,17 @@ def evaluar_temperatura(temperatura, temp_min, temp_max):
         print("Dentro del rango de seguridad")
     else:
         print("Fuera del rango de seguridad")
-
+     
+def cal_temp(temperaturas):
+    
+    min_val = temperaturas[0]
+    max_val = temperaturas[0]
+    
+    for temp in temperaturas:
+        if temp < min_val:
+            min_val = temp  
+        if temp > max_val:
+            max_val = max_val  
 
 while True:
     try:
@@ -82,7 +92,7 @@ elif intensidad == 2:
     print("Intensidad del lote: Media")
 else:
     print("Intensidad del lote: Intensa")
-
-print("Temperatura maxima:")
+    
+#print(f"Temperatura maxima: {min_val}°C")
 print("Temperatura media:")
-print("Temperatura minima:")
+#print(f"Temperatura minima: {max_val}°C")

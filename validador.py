@@ -65,6 +65,7 @@ print("Las temperaturas registradas son:")
 
 for item in temperaturas:
     print(f"{item}°C")
+    evaluar_temperatura(item, temp_min, temp_max)
 
 print("Las temperaturas se registraron con éxito.")
 
@@ -82,9 +83,6 @@ elif intensidad == 2:
 else:
     print("Intensidad del lote: Intensa")
 
-for temperatura in temperaturas:
-    evaluar_temperatura(temperatura, temp_min, temp_max)
-
 print("Temperatura maxima:")
-print("Temperatura minima:")
 print("Temperatura media:")
+print("Temperatura minima:")

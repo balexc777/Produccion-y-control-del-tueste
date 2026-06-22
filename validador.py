@@ -3,11 +3,22 @@ def evaluar_temperatura(temperatura, temp_min, temp_max):
         print("Dentro del rango de seguridad")
     else:
         print("Fuera del rango de seguridad")
+     
+def cal_temp(temperaturas):
+    min_val = temperaturas[0]
+    max_val = temperaturas[0]
+        
+    for temp in temperaturas:
+        if temp < min_val:
+            min_val = temp  
+        elif temp > max_val:
+            max_val = temp 
 
+    return min_val, max_val
 
 while True:
     try:
-        Numero_lote = int(input("Ingrese el numero de lote a realizar:"))
+        Numero_lote = int(input("Ingrese el numero de lote a realizar: "))
         if Numero_lote <= 0:
             print("Debe ingresar un numero mayor a 0")
         else:
@@ -31,18 +42,15 @@ while True:
             break
         else:
             print("Error. Debe ingresar 1, 2 o 3.")
-
     except ValueError:
         print("Error: Debe ingresar un número.")
 
 while True:
     try:
         minutos = int(input("Ingrese cuántos minutos va a durar el lote: "))
-
         if minutos <= 0 or minutos > 60:
             raise ValueError()
         break
-
     except ValueError:
         print("Error: Debe ingresar un número valido.")
 
@@ -55,21 +63,19 @@ for i in range(minutos):
             if temperatura < 0 or temperatura > 500:
                 raise ValueError()
             break
-
         except ValueError:
             print("Error: Debe ingresar un número valido.")
 
     temperaturas.append(temperatura)
 
-print("Las temperaturas registradas son:")
-
+print("\nLas temperaturas registradas son:")
 for item in temperaturas:
     print(f"{item}°C")
     evaluar_temperatura(item, temp_min, temp_max)
 
 print("Las temperaturas se registraron con éxito.")
 
-print("---------------------")
+print("\n---------------------")
 print("- Resumen del lote  -")
 print("---------------------")
 
@@ -83,6 +89,10 @@ elif intensidad == 2:
 else:
     print("Intensidad del lote: Intensa")
 
-print("Temperatura maxima:")
-print("Temperatura media:")
-print("Temperatura minima:")
+min_val, max_val = cal_temp(temperaturas)
+
+media = sum(temperaturas) / len(temperaturas)
+
+print(f"Temperatura minima: {min_val}°C")
+print(f"Temperatura media: {media:.2f}°C") 
+print(f"Temperatura maxima: {max_val}°C")
